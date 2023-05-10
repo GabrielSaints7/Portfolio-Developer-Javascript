@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/7a415df349.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/acordeon.css">
+    <link rel="stylesheet" href="/css/languages.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/experience.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/preloader.css">
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <img src="/assets/imgs/rocket.gif" alt="" srcset="">
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
+
+    <main class="main">
+        <header class="header">
+            <img id="profile.photo" class="photo" src="/assets/imgs/perfilSs.jpg" alt="Foto do Desenvolver">
+            <div class="highinformation">
+                <h1 class="title">Olá,<br> Eu sou o <span id="profile.name">Carregando...</span></h1>
+
+                <div class="information">
+                    <p class="job">
+                        <i class="fa-solid fas fa-user-astronaut"></i>
+                        <span id="profile.job">Carregando...</span>
+                    </p>
+                    <p class="location">
+                        <i class="fa-solid fas fas fa-map-marker-alt"></i>
+                        <span id="profile.location">Carregando...</span>
+                    </p>
+                    <p>
+                        <i class="fa-solid fab fa-whatsapp"></i>
+                        <a href="tel:92 98400-1024" id="profile.phone">
+                            Carregando...
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fas fa-envelope"></i>
+                        <a href="mailto:webgabrieldeveloper@gmail.com">
+                            <span id="profile.email">Carregando...</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <section id="skills" class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+            <div class="content">
+                <div class="skills">
+                    <section class="profissionais">
+                        <h3>Habilidades Profissionais</h3>
+                        <ul id="profile.skills.hardSkills" class="icons">
+                            <img src="" alt="" srcset="">
+                            <li>
+                                <i id="github" class="fa-solid fab fa-github"></i>
+                            </li>
+                            <i id="python" class="fa-solid fab fab fa-python"></i>
+                            <i id="js" class="fa-solid fab fab fa-js-square"></i>
+                            <i id="linux" class="fa-solid fab fa-linux"></i>
+                        </ul>
+                    </section>
+                    <section class="pessoais">
+                        <h3>Habilidades Pessoais</h3>
+                        <ul id="profile.skills.softSkills" class="habilidades">
+                            <li class="first">Facilidade com tarefas práticas</li>
+                            <li>Comunicação</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Organização</li>
+                            <li>Comprometimento com resultados</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="idiomas" class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+            <div class="content">
+                <ul id="profile.languages" class="languages">
+                    <li>Português (BR)</li>
+                    <li>Inglês</li>
+                    <li>Espanhol</li>
+                    <li>Italiano</li>
+                </ul>
+            </div>
+        </section>
+        <section id="educacao" class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Educação</h2>
+            </button>
+            <div class="content">
+                <ul class="languages">
+                    <li>Português (BR)</li>
+                    <li>Inglês</li>
+                    <li>Espanhol</li>
+                    <li>Italiano</li>
+                </ul>
+            </div>
+        </section>
+        <section id="portfolio" class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Portfolio</h2>
+            </button>
+            <div class="content">
+                <ul id="profile.portfolio" class="portfolio">
+                    <li>
+                        <h3 class="github">Criando um app de lembrete</h3>
+                        <a href="https://www.google.com.br" target="_blank">https://www.google.com.br</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="experiencia_profissional" class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Experiência Profissional</h2>
+            </button>
+            <div class="content">
+                <ul id="profile.experience" class="experience">
+                    <li>
+                        <h3 class="title">FrontEnd Developer / Freelancer.com</h3>
+                        <span class="data">Janeiro 2022 - Present</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime officia est expedita unde
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="Js/preloader.js"></script>
+    <script src="/Js/api.js"></script>
+    <script src="/Js/acordeon.js"></script>
+    <script src="/Js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header::after{
+    content: '';
+    background-image: url('/assets/icons/detalhes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: inline-block;
+    position: absolute;
+    
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 10px rgba(30, 110, 238, 0.556);
+    transition: .3s ease-in-out;
+}
+.photo:hover {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 10px rgba(72, 238, 30, 0.556);
+    transition: 1s ease-in-out;
+}
+
+.header .title{
+    text-align: center;
+    font-family: 'Neue machina';
+}
+
+.information{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.information p{
+    margin:.5rem ;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.information p a{
+    text-decoration: none;
+    color: white;
+}
+.information p a:hover{
+    text-decoration: underline;
+}
+
+.fa-solid{
+    margin: 0 .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .information{
+        width: auto;
+    }
+    .highinformation .title{
+        text-align: start;
+        max-width: 260px;
+    }
+}
