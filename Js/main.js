@@ -66,6 +66,28 @@ function updateExperience(profileData) {
 }
 
 
+function updateEducation(profileData){
+    const education = document.getElementById('profile.education')
+    education.innerHTML = profileData.education.map((education) => `
+    <li>
+        <h3 class="github">${education.course}</h3>
+        <span class="data">${education.institution}</span>
+        <p>${education.period}</p>
+    </li>
+    `).join(``)
+}
+function updateCertification(profileData){
+    const certification = document.getElementById('profile.certification')
+    certification.innerHTML = profileData.certification.map((certification) => `
+    <li>
+        <h3 class="tag">${certification.course}</h3>
+        <span class="data">${certification.institution}</span>
+        <p>${certification.period}</p>
+    </li>
+    `).join(``)
+}
+
+
 (async () => {
     const profileData = await fetchProfileDetail()
     updateProfileInfo(profileData)
@@ -74,4 +96,6 @@ function updateExperience(profileData) {
     updateLanguege(profileData)
     updatePortfolio(profileData)
     updateExperience(profileData)
+    updateEducation(profileData)
+    updateCertification(profileData)
 })()
